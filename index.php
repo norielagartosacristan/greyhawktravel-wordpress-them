@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
-    <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-
-<header>
-    <div class="header-content">
-        <h1><?php bloginfo('name'); ?></h1>
-        <p><?php bloginfo('description'); ?></p>
-        <nav>
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-        </nav>
-    </div>
-</header>
+<?php get_header(); ?>
 
 <main>
     <section class="featured-tours">
         <h2>Featured Tours</h2>
         <?php
-        // Example of a custom query for "Tour" posts
+        // Custom query for displaying tours
         $args = array( 'post_type' => 'tour', 'posts_per_page' => 3 );
         $tour_query = new WP_Query( $args );
         if ( $tour_query->have_posts() ) :
@@ -43,7 +25,6 @@
 
     <section class="popular-destinations">
         <h2>Popular Destinations</h2>
-        <!-- Here you can use custom content, or even a custom post type for destinations -->
         <div class="destination-grid">
             <div class="destination">
                 <img src="path-to-image.jpg" alt="Destination">
@@ -55,15 +36,8 @@
                 <h3>Tokyo, Japan</h3>
                 <p>Discover the blend of tradition and technology...</p>
             </div>
-            <!-- Add more destinations as needed -->
         </div>
     </section>
 </main>
 
-<footer>
-    <p>&copy; <?php echo date('Y'); ?> - <?php bloginfo('name'); ?>. All rights reserved.</p>
-</footer>
-
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
