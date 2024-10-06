@@ -28,4 +28,18 @@ function register_my_menu() {
     register_nav_menu('primary', __( 'Primary Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+// Register Footer Widgets
+function travel_theme_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'Footer Widget',
+        'id'            => 'footer-widget',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+}
+add_action( 'widgets_init', 'travel_theme_widgets_init' );
+
 ?>
