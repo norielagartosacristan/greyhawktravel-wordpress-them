@@ -9,3 +9,55 @@
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain: travel-theme
 */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #00aaff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+.book-tour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book-tour:hover {
+    background-color: #cc5200;
+}
+
+.featured-tours, .popular-destinations {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.destination-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    margin-top: 10px;
+}
+
