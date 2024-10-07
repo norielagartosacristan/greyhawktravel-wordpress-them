@@ -42,4 +42,10 @@ function travel_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'travel_theme_widgets_init' );
 
+// Enable support for Post Thumbnails
+add_theme_support( 'post-thumbnails' );
+
+// Enable support for custom Logo
+add_theme_support( 'custom-logo' );
+
 ?>

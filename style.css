@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: #00aaff;
+    background-color: #123456;
     padding: 20px;
     text-align: center;
 }
@@ -61,3 +61,8 @@ header nav {
     margin-top: 10px;
 }
 
+.contact-info {
+    text-align: right;
+    font-size: 1rem;
+    margin-top: -px;
+}
