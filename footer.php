@@ -1,6 +1,4 @@
 
-
-
 <footer id="site-footer" class="site-footer">
 
     <div class="footer-content">
@@ -8,8 +6,15 @@
             <h2>Greyhawk Travel and Tours</h2>
             <p>Explore the world with us! Offering the best travel and tour services.</p>
         </div>
-        <div>
-
+        <div class="footer-center">
+            <h3>Quick Links</h3>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'footer-menu',
+                'container'      => '',
+                'menu_class'     => 'footer-menu'
+            ) );
+            ?>
         </div>
         <div class="footer-right">
 
