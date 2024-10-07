@@ -42,14 +42,11 @@ function travel_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'travel_theme_widgets_init' );
 
-<<<<<<< Updated upstream
 function enqueue_google_maps_script() {
     wp_enqueue_script( 'google-maps', 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY', array(), null, true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_google_maps_script' );
 
-=======
->>>>>>> Stashed changes
 
 // Enable support for Post Thumbnails
 add_theme_support( 'post-thumbnails' );
