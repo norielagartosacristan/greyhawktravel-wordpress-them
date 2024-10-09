@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #123456;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+.book-tour {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book-tour:hover {
+    background-color: #cc5200;
+}
+
+.featured-tours, .popular-destinations {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.destination-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destination h3 {
+    margin-top: 10px;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 1rem;
+    margin-top: -px;
+}
+
+.tour-price, .tour-duration {
+    font-size: 1.2rem;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+/* Moile Styles */
+@media (max-width: 767px) {
+    .header-content {
+        text-align: center;
+    }
+
+    .destination-grid {
+        flex-direction: column;
+    }
+
+    .destination {
+        margin-bottom: 20px;
+    }
+}
