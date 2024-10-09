@@ -4,14 +4,14 @@ function travel_theme_enqueue_styles() {
     wp_enqueue_style( 'main-style', get_stylesheet_uri() );
 }
 
+add_action( 'wp_enqueue_scripts', 'travel_theme_enqueue_styles' );
+
 function greyhawk_enqueue_styles() {
-    // Register the CSS file
-    wp_enqueue_style( 'custom-navbar-style', get_template_directory_uri() . '/css/style.css' );
+    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/main.css' );
 }
 add_action( 'wp_enqueue_scripts', 'greyhawk_enqueue_styles' );
 
 
-add_action( 'wp_enqueue_scripts', 'travel_theme_enqueue_styles' );
 
 // Register Custom Post Type for Tours
 function create_tour_post_type() {

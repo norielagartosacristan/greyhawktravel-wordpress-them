@@ -19,7 +19,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="<?php echo home_url(); ?>">Home</a></li>
-                <li><a href="<?php echo site_url('/tour-packages'); ?>">Tour Packages</a></li>
+                <li><a href="<?php echo site_url('/tour-packages'); ?>">Holiday</a></li>
                 <li><a href="<?php echo site_url('/flight-bookings'); ?>">Flight Bookings</a></li>
                 <li><a href="<?php echo site_url('/hotel-reservations'); ?>">Hotel Reservations</a></li>
                 <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
