@@ -11,8 +11,24 @@
     <div class="header-content">
         <h1><?php bloginfo('name'); ?></h1>
         <p><?php bloginfo('description'); ?></p>
-        <nav>
-            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+
+        <!-- Custom Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="<?php echo home_url(); ?>">Home</a></li>
+                <li><a href="<?php echo site_url('/tour-packages'); ?>">Tour Packages</a></li>
+                <li><a href="<?php echo site_url('/flight-bookings'); ?>">Flight Bookings</a></li>
+                <li><a href="<?php echo site_url('/hotel-reservations'); ?>">Hotel Reservations</a></li>
+                <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
+                <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <span>&#9776;</span>
+            </div>
         </nav>
     </div>
 </header>
+
